@@ -3,7 +3,7 @@
 }
 
 img {
-    width: 50%;
+    width: 80%;
     /* height: auto; */
 }
 
@@ -11,7 +11,7 @@ img {
     margin: 0 auto;
     width: 80%;
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "header header"
@@ -23,19 +23,45 @@ img {
 .header {
     grid-area: header;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .nav {
     grid-area: nav;
     height: 2em;
+    
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav__item {
+    display: inline;
 }
 
 .introduction {
     grid-area: introduction;
 }
 
+.introduction__title {
+    font-size: 1.5rem;
+}
+
+.introduction__text {
+    padding-top: 1rem;
+}
+
 .main-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: image;
 }
 
