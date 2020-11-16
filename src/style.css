@@ -1,0 +1,35 @@
+img {
+    width: 50%;
+    /* height: auto; */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header" "header"
+        "introduction" "image"
+        "footer" "footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: header;
+}
+
+.introduction {
+    grid-area: introduction;
+}
+
+.main-image {
+    grid-area: image;
+}
+
+.footer {
+    grid-area: footer;
+}
+
