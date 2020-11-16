@@ -1,1 +1,1 @@
-console.log("Run success");
+(()=>{"use strict";!function(){let e=document.createElement("header"),t=document.createElement("nav");const n=document.querySelector("#content");n.appendChild(e),n.appendChild(t),e.textContent="Damo's Pizzeria"}(),console.log("Run success")})();
