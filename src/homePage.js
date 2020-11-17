@@ -1,7 +1,6 @@
 
 const homePage = function() {
-
-
+    
     // Define all elements required
     const content = document.querySelector("#content");
     const grid = document.createElement("div");
@@ -31,23 +30,17 @@ const homePage = function() {
         navItem.classList.add("nav__item");
         navItem.textContent = navTitles[i];
         navMenu.appendChild(navItem);
-        
     }
 
     introduction.appendChild(introductionTitle);
     introduction.appendChild(introductionText);
-
     imageContainer.appendChild(image);
-
     footer.appendChild(footerCopyright);
 
     // Add text content to appropriate elements
     header.textContent = "Damo's Pizzeria";
-
     introductionTitle.textContent = "The best pizza in Adelaide!";
-
     introductionText.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia facere, laudantium illo eligendi nemo earum nulla exercitationem magni quam obcaecati corporis iusto officia reprehenderit quia, itaque molestiae atque ipsam!";
-
     footerCopyright.textContent = "Copyright Damo 2020";
     
     // Add class names to elements
@@ -55,7 +48,6 @@ const homePage = function() {
     header.classList.add("header");
     nav.classList.add("nav");
     navMenu.classList.add("nav__menu");
-    
     introduction.classList.add("introduction");
     introductionTitle.classList.add("introduction__title");
     introductionText.classList.add("introduction__text");
@@ -65,11 +57,9 @@ const homePage = function() {
     footerCopyright.classList.add("footer__copyright");
 
     // Add other necessary attributes to elements
-
+    image.src = "../src/pizza.jpg";
+    image.alt = "Delicious pizza";
 }();
-
-
-
 
 
 export default homePage
