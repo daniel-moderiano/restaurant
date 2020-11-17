@@ -58,7 +58,7 @@ img {
     padding-top: 1rem;
 }
 
-.main-image {
+.image-container {
     display: flex;
     align-items: center;
     justify-content: center;
