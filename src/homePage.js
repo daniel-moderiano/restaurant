@@ -59,7 +59,7 @@ const homePage = function() {
     // Add other necessary attributes to elements
     image.src = "../src/pizza.jpg";
     image.alt = "Delicious pizza";
-}();
+};
 
 
 export default homePage
