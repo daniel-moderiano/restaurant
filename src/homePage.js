@@ -6,8 +6,8 @@ const homePage = function() {
     const grid = document.createElement("div");
     const header = document.createElement("header");
     const nav = document.createElement("nav");
-    const navMenu = document.createElement("ul");
-    const navTitles = ["Home", "Menu", "About"];
+    const navBtnGroup = document.createElement("div");
+    const navBtns = ["Home", "Menu", "About"];
     const introduction = document.createElement("section");
     const introductionTitle = document.createElement("h2");
     const introductionText = document.createElement("article");
@@ -23,13 +23,13 @@ const homePage = function() {
     firstChildren.forEach(child => grid.appendChild(child));
 
     // Append second and third degree child nodes to relevant parent nodes
-    nav.appendChild(navMenu);
+    nav.appendChild(navBtnGroup);
 
     for(let i = 0; i < 3; i++) {
-        const navItem = document.createElement("li");
-        navItem.classList.add("nav__item");
-        navItem.textContent = navTitles[i];
-        navMenu.appendChild(navItem);
+        const navBtn = document.createElement("button");
+        navBtn.classList.add("nav__btn");
+        navBtn.textContent = navBtns[i];
+        navBtnGroup.appendChild(navBtn);
     }
 
     introduction.appendChild(introductionTitle);
@@ -47,7 +47,7 @@ const homePage = function() {
     grid.classList.add("grid");
     header.classList.add("header");
     nav.classList.add("nav");
-    navMenu.classList.add("nav__menu");
+    navBtnGroup.classList.add("nav__btn-group");
     introduction.classList.add("introduction");
     introductionTitle.classList.add("introduction__title");
     introductionText.classList.add("introduction__text");

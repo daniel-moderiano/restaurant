@@ -35,17 +35,6 @@ img {
     
 }
 
-.nav-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.nav__item {
-    display: inline;
-}
-
 .introduction {
     grid-area: introduction;
 }
