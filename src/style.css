@@ -64,3 +64,6 @@ img {
     height: 2em;
 }
 
+.nav__btn--selected {
+    background-color: rgb(250, 86, 86);
+}
