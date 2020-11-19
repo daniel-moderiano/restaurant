@@ -8,6 +8,7 @@ const homePage = function() {
     const nav = document.createElement("nav");
     const navBtnGroup = document.createElement("div");
     const navBtns = ["Home", "Menu", "Contact"];
+    const main = document.createElement("div");
     const introduction = document.createElement("section");
     const introductionTitle = document.createElement("h2");
     const introductionText = document.createElement("article");
@@ -19,7 +20,7 @@ const homePage = function() {
     // Append first degree child nodes to grid container
     content.appendChild(grid);
 
-    const firstChildren = [header, nav, introduction, imageContainer, footer];
+    const firstChildren = [header, nav, main, footer];
     firstChildren.forEach(child => grid.appendChild(child));
 
     // Append second and third degree child nodes to relevant parent nodes
@@ -33,6 +34,8 @@ const homePage = function() {
         navBtnGroup.appendChild(navBtn);
     }
 
+    main.appendChild(introduction);
+    main.appendChild(imageContainer);
     introduction.appendChild(introductionTitle);
     introduction.appendChild(introductionText);
     imageContainer.appendChild(image);
@@ -49,6 +52,7 @@ const homePage = function() {
     header.classList.add("header");
     nav.classList.add("nav");
     navBtnGroup.classList.add("nav__btn-group");
+    main.classList.add("main");
     introduction.classList.add("introduction");
     introductionTitle.classList.add("introduction__title");
     introductionText.classList.add("introduction__text");

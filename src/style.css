@@ -16,7 +16,7 @@ img {
     grid-template-areas: 
         "header header"
         "nav nav"
-        "introduction image"
+        "main main"
         "footer footer";
 }
 
@@ -33,6 +33,11 @@ img {
     grid-area: nav;
     height: 2em;
     
+}
+
+.main {
+    grid-area: main;
+    display: flex;
 }
 
 .introduction {
