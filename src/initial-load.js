@@ -1,5 +1,5 @@
 
-const homePage = function() {
+const initialLoad = function() {
     
     // Define all elements required
     const content = document.querySelector("#content");
@@ -9,11 +9,6 @@ const homePage = function() {
     const navBtnGroup = document.createElement("div");
     const navBtns = ["Home", "Menu", "Contact"];
     const main = document.createElement("div");
-    const introduction = document.createElement("section");
-    const introductionTitle = document.createElement("h2");
-    const introductionText = document.createElement("article");
-    const imageContainer = document.createElement("aside");
-    const image = document.createElement("img");
     const footer = document.createElement("footer");
     const footerCopyright = document.createElement("p");
 
@@ -34,17 +29,10 @@ const homePage = function() {
         navBtnGroup.appendChild(navBtn);
     }
 
-    main.appendChild(introduction);
-    main.appendChild(imageContainer);
-    introduction.appendChild(introductionTitle);
-    introduction.appendChild(introductionText);
-    imageContainer.appendChild(image);
     footer.appendChild(footerCopyright);
 
     // Add text content to appropriate elements
     header.textContent = "Damo's Pizzeria";
-    introductionTitle.textContent = "The best pizza in Adelaide!";
-    introductionText.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia facere, laudantium illo eligendi nemo earum nulla exercitationem magni quam obcaecati corporis iusto officia reprehenderit quia, itaque molestiae atque ipsam!";
     footerCopyright.textContent = "Copyright Damo 2020";
     
     // Add class names to elements
@@ -53,19 +41,9 @@ const homePage = function() {
     nav.classList.add("nav");
     navBtnGroup.classList.add("nav__btn-group");
     main.classList.add("main");
-    introduction.classList.add("introduction");
-    introductionTitle.classList.add("introduction__title");
-    introductionText.classList.add("introduction__text");
-    imageContainer.classList.add("image-container");
-    image.classList.add("image");
     footer.classList.add("footer");
     footerCopyright.classList.add("footer__copyright");
 
-    // Add other necessary attributes to elements
-    image.src = "../src/pizza.jpg";
-    image.alt = "Delicious pizza";
-
 };
 
-
-export default homePage
+export default initialLoad

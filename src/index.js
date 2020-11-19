@@ -1,26 +1,50 @@
-import homePage from "./homePage.js"
+import homeTab from "./homeTab.js"
+import initialLoad from "./initial-load.js"
 
-homePage();
+initialLoad();
 
 // Use this file to add appropriate event listeners
-const homeBtn = document.querySelector("#home");
-const menuBtn = document.querySelector("#menu");
-const contactBtn = document.querySelector("#contact");
-const content = document.querySelector("#content");
+
+const page = function() {
+    const homeBtn = document.querySelector("#home");
+    const menuBtn = document.querySelector("#menu");
+    const contactBtn = document.querySelector("#contact");
+    const content = document.querySelector("#content");
+    const tabContent = document.querySelector(".main");
+
+    return {
+        homeBtn,
+        menuBtn,
+        contactBtn,
+        content,
+        tabContent
+    }
+}();
+
+
+homeTab(page.tabContent);
 
 
 const homeClick = function() {
-    if (!content.hasChildNodes()) {
-        homePage();
+    if (!page.tabContent.hasChildNodes()) {
+        homeTab(page.tabContent);
     } else {
         // pass
     }
 }
 
-homeBtn.addEventListener("click", homeClick);
+page.homeBtn.addEventListener("click", homeClick);
 
 
+const menuClick = function() {
+    if (page.tabContent.hasChildNodes()) {
+        while (page.tabContent.firstChild) {
+            page.tabContent.removeChild(page.tabContent.lastChild);
+        }
+    } else {
+        // pass
+    }
+}
 
-
-console.log('Run success');
+page.menuBtn.addEventListener("click", menuClick)
 
