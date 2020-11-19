@@ -1,4 +1,6 @@
 import homeTab from "./homeTab.js"
+import contactTab from "./contactTab.js"
+import menuTab from "./menuTab.js"
 import initialLoad from "./initial-load.js"
 
 initialLoad();
@@ -26,7 +28,10 @@ homeTab(page.tabContent);
 
 
 const homeClick = function() {
-    if (!page.tabContent.hasChildNodes()) {
+    if (page.tabContent.hasChildNodes()) {
+        while (page.tabContent.firstChild) {
+            page.tabContent.removeChild(page.tabContent.lastChild);
+        }
         homeTab(page.tabContent);
     } else {
         // pass
@@ -36,15 +41,32 @@ const homeClick = function() {
 page.homeBtn.addEventListener("click", homeClick);
 
 
+
 const menuClick = function() {
     if (page.tabContent.hasChildNodes()) {
         while (page.tabContent.firstChild) {
             page.tabContent.removeChild(page.tabContent.lastChild);
         }
+        menuTab(page.tabContent);
     } else {
         // pass
     }
 }
 
 page.menuBtn.addEventListener("click", menuClick)
+
+
+
+const contactClick = function() {
+    if (page.tabContent.hasChildNodes()) {
+        while (page.tabContent.firstChild) {
+            page.tabContent.removeChild(page.tabContent.lastChild);
+        }
+        contactTab(page.tabContent);
+    } else {
+        // pass
+    }
+}
+
+page.contactBtn.addEventListener("click", contactClick)
 

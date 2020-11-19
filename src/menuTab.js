@@ -1,7 +1,7 @@
 
 // Function to take parent element (tab container) and append appropriate elements
 
-const homeTab = function(tabElement) {
+const menuTab = function(tabElement) {
     
 
     // Define all elements required
@@ -22,8 +22,8 @@ const homeTab = function(tabElement) {
 
     // Add text content to appropriate elements
 
-    introductionTitle.textContent = "The best pizza in Adelaide!";
-    introductionText.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia facere, laudantium illo eligendi nemo earum nulla exercitationem magni quam obcaecati corporis iusto officia reprehenderit quia, itaque molestiae atque ipsam!";
+    introductionTitle.textContent = "Browse our dishes";
+    introductionText.textContent = "Lorem ipsum";
 
     
     // Add class names to elements
@@ -41,4 +41,4 @@ const homeTab = function(tabElement) {
 };
 
 
-export default homeTab
+export default menuTab
