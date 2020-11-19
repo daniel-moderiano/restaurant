@@ -7,7 +7,7 @@ const homePage = function() {
     const header = document.createElement("header");
     const nav = document.createElement("nav");
     const navBtnGroup = document.createElement("div");
-    const navBtns = ["Home", "Menu", "About"];
+    const navBtns = ["Home", "Menu", "Contact"];
     const introduction = document.createElement("section");
     const introductionTitle = document.createElement("h2");
     const introductionText = document.createElement("article");
@@ -29,6 +29,7 @@ const homePage = function() {
         const navBtn = document.createElement("button");
         navBtn.classList.add("nav__btn");
         navBtn.textContent = navBtns[i];
+        navBtn.id = navBtns[i].toLowerCase();
         navBtnGroup.appendChild(navBtn);
     }
 
@@ -59,6 +60,7 @@ const homePage = function() {
     // Add other necessary attributes to elements
     image.src = "../src/pizza.jpg";
     image.alt = "Delicious pizza";
+
 };
 
 
