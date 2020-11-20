@@ -5,38 +5,60 @@ const contactTab = function(tabElement) {
     
 
     // Define all elements required
-    const introduction = document.createElement("section");
-    const introductionTitle = document.createElement("h2");
-    const introductionText = document.createElement("article");
-    const imageContainer = document.createElement("aside");
-    const image = document.createElement("img");
+    const contact = document.createElement("div");
+    const contactHours = document.createElement("section");
+    const contactDetails = document.createElement("section");
+    const contactTitleHours = document.createElement("h2");
+    const contactTitleDetails = document.createElement("h2");
+    const contactWeekdays = document.createElement("div");
+    const contactWeekends = document.createElement("div");
+    const contactDetailsList = document.createElement("ul");
+    const listItems = ["Phone", "Email", "Address"];
+    
 
     // Append second and third degree child nodes to relevant parent nodes
 
-    tabElement.appendChild(introduction);
-    tabElement.appendChild(imageContainer);
-    introduction.appendChild(introductionTitle);
-    introduction.appendChild(introductionText);
-    imageContainer.appendChild(image);
+    tabElement.appendChild(contact);
+    
+    contact.appendChild(contactHours);
+    contact.appendChild(contactDetails);
+    
+    contactHours.appendChild(contactTitleHours);
+    contactHours.appendChild(contactWeekdays);
+    contactHours.appendChild(contactWeekends);
+    contactDetails.appendChild(contactTitleDetails);
+    contactDetails.appendChild(contactDetailsList);
+    
+    listItems.forEach(item => {
+        const listItem = document.createElement("li");
+        listItem.classList.add("contact__list-item", `contact__${item.toLowerCase()}`);
+      
+    
+        listItem.id = item.toLowerCase();
+        contactDetailsList.appendChild(listItem);
+    });
 
 
     // Add text content to appropriate elements
 
-    introductionTitle.textContent = "Great selection of Pizza";
-    introductionText.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit!";
+    contactTitleHours.textContent = "Opening hours";
+    contactTitleDetails.textContent = "Contact Us!";
+    contactWeekdays.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel, tempora doloribus itaque, dignissimos sequi accusantium placeat id at natus dolorum eveniet ducimus corrupti, dolores quas reiciendis voluptates animi iste.";
+    contactWeekends.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel, tempora doloribus itaque, dignissimos sequi accusantium placeat id at natus dolorum eveniet ducimus corrupti, dolores quas reiciendis voluptates animi iste.";
 
-    
+
+
+
     // Add class names to elements
 
-    introduction.classList.add("introduction");
-    introductionTitle.classList.add("introduction__title");
-    introductionText.classList.add("introduction__text");
-    imageContainer.classList.add("image-container");
-    image.classList.add("image");
-
-    // Add other necessary attributes to elements
-    image.src = "../src/pizza.jpg";
-    image.alt = "Delicious pizza";
+    contact.classList.add("contact");
+    contactHours.classList.add("contact__hours");
+    contactDetails.classList.add("contact__details");
+    contactTitleHours.classList.add("contact__title-hours");
+    contactTitleDetails.classList.add("contact__title-details");
+    contactWeekdays.classList.add("contact__weekdays");
+    contactWeekends.classList.add("contact__weekends");
+    contactDetailsList.classList.add("contact__details-list");
 
 };
 

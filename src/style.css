@@ -67,3 +67,16 @@ img {
 .nav__btn--selected {
     background-color: rgb(250, 86, 86);
 }
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+.contact__hours {
+    grid-column: 1 / 3;
+}
