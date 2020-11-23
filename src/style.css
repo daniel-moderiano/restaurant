@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:focus {
+    outline: none;
+}
+
 /* Colour template planned
 #141613 base 'black' or darker #0A0B09
 #EBEBEB base 'white'
@@ -42,11 +46,13 @@ img {
     font-size: 2rem;
     font-weight: bold;
     color: #e0e0e0;
+    font-family: "Sansita Swashed", sans-serif;
+    font-weight: 400;
 }
 
 .nav {
-    grid-area: nav;
-    height: 2em;   
+    grid-area: nav; 
+    border: 1px solid white;
 }
 
 .main {
@@ -62,11 +68,15 @@ img {
 .introduction__title {
     font-size: 1.5rem;
     color: #e0e0e0;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .introduction__text {
-    padding-top: 1rem;
+
     color: #e0e0e0;
+    font-family: "Nunito Sans", sans-serif;
+    padding: 0 0 1rem 1rem;
 }
 
 .image-container {
