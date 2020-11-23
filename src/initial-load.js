@@ -32,8 +32,8 @@ const initialLoad = function() {
     footer.appendChild(footerCopyright);
 
     // Add text content to appropriate elements
-    header.textContent = "Damo's Pizzeria";
-    footerCopyright.textContent = "Copyright Damo 2020";
+    header.textContent = "Pizza Time!";
+    footerCopyright.textContent = "Copyright Pizza Time 2020";
     
     // Add class names to elements
     grid.classList.add("grid");

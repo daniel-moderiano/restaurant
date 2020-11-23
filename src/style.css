@@ -2,9 +2,23 @@
     box-sizing: border-box;
 }
 
+/* Colour template planned
+#141613 base 'black' or darker #0A0B09
+#EBEBEB base 'white'
+Consider a brown or gold highlight?
+Perhaps #977635 as a gold or darkier #5B4720
+#1A2023 grey highlight or darker #111517
+
+*/
+
 img {
     width: 80%;
     /* height: auto; */
+}
+
+#content {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
 }
 
 .grid {
