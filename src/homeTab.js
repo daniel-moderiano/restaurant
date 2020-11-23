@@ -22,7 +22,7 @@ const homeTab = function(tabElement) {
 
     // Add text content to appropriate elements
 
-    introductionTitle.textContent = "The best pizza in Adelaide!";
+    introductionTitle.textContent = "The best pizza in New York";
     introductionText.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia facere, laudantium illo eligendi nemo earum nulla exercitationem magni quam obcaecati corporis iusto officia reprehenderit quia, itaque molestiae atque ipsam!";
 
     
@@ -35,7 +35,7 @@ const homeTab = function(tabElement) {
     image.classList.add("image");
 
     // Add other necessary attributes to elements
-    image.src = "../src/pizza.jpg";
+    // image.src = "../src/pizza.jpg";
     image.alt = "Delicious pizza";
 
 };

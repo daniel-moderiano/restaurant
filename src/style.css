@@ -17,7 +17,7 @@ img {
 }
 
 #content {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #0A0B09;
     height: 100vh;
 }
 
@@ -41,17 +41,18 @@ img {
     padding: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    color: #e0e0e0;
 }
 
 .nav {
     grid-area: nav;
-    height: 2em;
-    
+    height: 2em;   
 }
 
 .main {
     grid-area: main;
     display: flex;
+    border: 3px solid #5B4720;
 }
 
 .introduction {
@@ -60,10 +61,12 @@ img {
 
 .introduction__title {
     font-size: 1.5rem;
+    color: #e0e0e0;
 }
 
 .introduction__text {
     padding-top: 1rem;
+    color: #e0e0e0;
 }
 
 .image-container {
@@ -76,10 +79,14 @@ img {
 .footer {
     grid-area: footer;
     height: 2em;
+    color: #e0e0e0;
 }
 
-.nav__btn--selected {
-    background-color: rgb(250, 86, 86);
+.nav__btn {
+    /* border: 3px solid #5B4720; */
+    background-color: #0A0B09;
+    color: #e0e0e0;
+    /* Consider making the selected state solid gold background with white text, and have this blend to the gold outline of the tab box. */
 }
 
 .contact {
@@ -88,7 +95,6 @@ img {
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
     width: 80%;
-
 }
 
 .contact__hours {
