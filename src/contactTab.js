@@ -31,9 +31,7 @@ const contactTab = function(tabElement) {
     
     listItems.forEach(item => {
         const listItem = document.createElement("li");
-        listItem.classList.add("contact__list-item", `contact__${item.toLowerCase()}`);
-      
-    
+        listItem.classList.add("contact__list-item", `contact__${item.toLowerCase()}`);    
         listItem.id = item.toLowerCase();
         contactDetailsList.appendChild(listItem);
     });
@@ -45,7 +43,12 @@ const contactTab = function(tabElement) {
     contactTitleDetails.textContent = "Contact Us!";
     contactWeekdays.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel, tempora doloribus itaque, dignissimos sequi accusantium placeat id at natus dolorum eveniet ducimus corrupti, dolores quas reiciendis voluptates animi iste.";
     contactWeekends.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vel, tempora doloribus itaque, dignissimos sequi accusantium placeat id at natus dolorum eveniet ducimus corrupti, dolores quas reiciendis voluptates animi iste.";
-
+    const contactPhone = document.querySelector(".contact__phone");
+    contactPhone.textContent = "08 8288 8828";
+    const contactEmail = document.querySelector(".contact__email");
+    contactEmail.textContent = "pizzatime@internode.com";
+    const contactAddress = document.querySelector(".contact__address");
+    contactAddress.textContent = "121 Central Street, New York";
 
 
 

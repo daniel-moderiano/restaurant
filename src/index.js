@@ -24,7 +24,7 @@ const page = function() {
 }();
 
 
-homeTab(page.tabContent);
+contactTab(page.tabContent);
 
 
 const homeClick = function() {

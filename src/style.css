@@ -109,4 +109,17 @@ img {
 
 .contact__hours {
     grid-column: 1 / 3;
+    color: #e0e0e0;
+}
+
+.contact__title-hours {
+    color: #e0e0e0;
+}
+
+.contact__title-details {
+    color: #e0e0e0;
+}
+
+.contact__list-item {
+    color: #e0e0e0;
 }
