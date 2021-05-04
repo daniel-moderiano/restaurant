@@ -3,7 +3,9 @@ import contactTab from "./contactTab.js"
 import menuTab from "./menuTab.js"
 import initialLoad from "./initial-load.js"
 
+// Load up the basic homepage when the site is launched
 initialLoad();
+
 
 // Use this file to add appropriate event listeners
 
@@ -23,9 +25,9 @@ const page = function() {
     }
 }();
 
-
 contactTab(page.tabContent);
 
+// Add functions that enable tab switching on click of each relevant tab
 
 const homeClick = function() {
     if (page.tabContent.hasChildNodes()) {

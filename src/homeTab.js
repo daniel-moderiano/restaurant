@@ -35,7 +35,7 @@ const homeTab = function(tabElement) {
     image.classList.add("image");
 
     // Add other necessary attributes to elements
-    // image.src = "../src/pizza.jpg";
+    image.src = "../src/pizza1.jpg";
     image.alt = "Delicious pizza";
 
 };
