@@ -5,19 +5,28 @@ const menuTab = function(tabElement) {
     
 
     // Define all elements required
-    const introduction = document.createElement("section");
-    const introductionTitle = document.createElement("h2");
-    const introductionText = document.createElement("article");
-    const imageContainer = document.createElement("aside");
-    const image = document.createElement("img");
+    const menuContainer = document.createElement("section");
+    const menuTitle = document.createElement("h2");
+    const menuItem = document.createElement("div");
+    const menuDishTitle = document.createElement("h3");
+    const menuDishText = document.createElement("div");
+
 
     // Append second and third degree child nodes to relevant parent nodes
 
-    tabElement.appendChild(introduction);
-    tabElement.appendChild(imageContainer);
-    introduction.appendChild(introductionTitle);
-    introduction.appendChild(introductionText);
-    imageContainer.appendChild(image);
+    tabElement.appendChild(menuContainer);
+    menuContainer.appendChild(menuTitle);
+
+    // Create four menu entries for dishes
+    for (let i = 0; i < 4; i++) {
+        let menuItem = document.createElement("div");
+        let menuDishTitle = document.createElement("h3");
+        let menuDishText = document.createElement("div");
+        menuContainer.appendChild(menuItem);
+        menuItem.appendChild(menuDishTitle);
+        menuItem.appendChild(menuDishText);
+    }
+
 
 
     // Add text content to appropriate elements
@@ -31,12 +40,7 @@ const menuTab = function(tabElement) {
     introduction.classList.add("introduction");
     introductionTitle.classList.add("introduction__title");
     introductionText.classList.add("introduction__text");
-    imageContainer.classList.add("image-container");
-    image.classList.add("image");
 
-    // Add other necessary attributes to elements
-    image.src = "../src/pizza.jpg";
-    image.alt = "Delicious pizza";
 
 };
 

@@ -112,20 +112,18 @@ img {
 }
 
 .contact__hours {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto, 1fr, 1fr;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .contact__weekdays {
-    grid-row: 2 / 3;
+    padding: 1rem, 0;
     color: #e0e0e0;
     font-family: "Nunito Sans", sans-serif;
 }
 
 .contact__weekends {
-    grid-row: 3 / 4;
+    padding: 1rem, 0;
     color: #e0e0e0;
     font-family: "Nunito Sans", sans-serif;
 }

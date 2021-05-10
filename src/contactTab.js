@@ -41,15 +41,15 @@ const contactTab = function(tabElement) {
 
     contactTitleHours.textContent = "Opening hours";
     contactTitleDetails.textContent = "Contact Us!";
-    contactWeekdays.innerHTML = "Monday to Saturday" + "<br />" + "12:30pm - 9:30pm";
-    contactWeekends.innerHTML = "Sunday" + "<br />" + "Closed";
+    // Not good accessibility practice adding line breaks here
+    contactWeekdays.innerHTML = "Monday to Saturday" + "<br>" + "12:30pm - 9:30pm";
+    contactWeekends.innerHTML = "Sunday" + "<br>" + "Closed";
     const contactPhone = document.querySelector(".contact__phone");
     contactPhone.textContent = "08 8288 8828";
     const contactEmail = document.querySelector(".contact__email");
     contactEmail.textContent = "pizzatime@internode.com";
     const contactAddress = document.querySelector(".contact__address");
     contactAddress.textContent = "121 Central Street, New York, NY 10010, USA";
-
 
 
     // Add class names to elements

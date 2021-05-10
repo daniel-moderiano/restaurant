@@ -25,7 +25,7 @@ const page = function() {
     }
 }();
 
-contactTab(page.tabContent);
+menuTab(page.tabContent);
 
 // Add functions that enable tab switching on click of each relevant tab
 
