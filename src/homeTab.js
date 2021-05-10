@@ -5,6 +5,7 @@ const homeTab = function(tabElement) {
     
 
     // Define all elements required
+    const main = document.querySelector(".main");
     const introduction = document.createElement("section");
     const introductionTitle = document.createElement("h2");
     const introductionText = document.createElement("article");
@@ -22,12 +23,12 @@ const homeTab = function(tabElement) {
 
     // Add text content to appropriate elements
 
-    introductionTitle.textContent = "The best pizza in New York";
+    introductionTitle.textContent = "Pizza Fugazzi";
     introductionText.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos mollitia facere, laudantium illo eligendi nemo earum nulla exercitationem magni quam obcaecati corporis iusto officia reprehenderit quia, itaque molestiae atque ipsam!";
 
     
     // Add class names to elements
-
+    main.classList.add("main--home");
     introduction.classList.add("introduction");
     introductionTitle.classList.add("introduction__title");
     introductionText.classList.add("introduction__text");

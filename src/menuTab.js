@@ -5,6 +5,7 @@ const menuTab = function(tabElement) {
     
 
     // Define all elements required
+    const main = document.querySelector(".main");
     const menuContainer = document.createElement("section");
     const menuTitle = document.createElement("h2");
     const menuDish = document.createElement("div");
@@ -70,7 +71,7 @@ const menuTab = function(tabElement) {
 
     
     // Add class names to elements
-
+    main.classList.remove("main--home");
     menuContainer.classList.add("menu");
     menuTitle.classList.add("menu__title");
 

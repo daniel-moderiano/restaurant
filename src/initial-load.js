@@ -32,7 +32,6 @@ const initialLoad = function() {
     footer.appendChild(footerCopyright);
 
     // Add text content to appropriate elements
-    header.textContent = "Pizza Fugazzi";
     footerCopyright.textContent = "Copyright Pizza Fugazzi 2021";
     
     // Add class names to elements

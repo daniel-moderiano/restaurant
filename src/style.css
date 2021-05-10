@@ -25,6 +25,8 @@ img {
     height: 100vh;
 }
 
+/* HOME TAB + BACKGROUND */
+
 .grid {
     margin: 0 auto;
     width: 80%;
@@ -57,11 +59,15 @@ img {
 
 .main {
     grid-area: main;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 3px solid #5B4720;
-    /* height: 80vh; */
+}
+
+.main--home {
+    display: flex;
+    flex-direction: row;
 }
 
 .introduction {

@@ -5,6 +5,7 @@ const contactTab = function(tabElement) {
     
 
     // Define all elements required
+    const main = document.querySelector(".main");
     const contact = document.createElement("div");
     const contactHours = document.createElement("section");
     const contactDetails = document.createElement("section");
@@ -53,7 +54,7 @@ const contactTab = function(tabElement) {
 
 
     // Add class names to elements
-
+    main.classList.remove("main--home");
     contact.classList.add("contact");
     contactHours.classList.add("contact__hours");
     contactDetails.classList.add("contact__details");
