@@ -22,19 +22,23 @@ const menuTab = function(tabElement) {
     const dishes = [
         {
             menuEntry: "Margherita",
-            description: "Pizza Margherita"
+            description: "Fresh tomato, bocconcini, mozzarella, garlic & basil",
+            price: `Large $25   Small $20`
         },
         {
             menuEntry: "Pepperoni",
-            description: "Pizza Pepperoni"
+            description: "Fresh tomato, cheese and pepperoni",
+            price: `Large $26   Small $21`
         },
         {
-            menuEntry: "Vegetarian",
-            description: "Pizza Vegeterian"
+            menuEntry: "Seafood",
+            description: "Tomato, cheese. marinated prawns, squid, anchover, mussels, fish & parsley",
+            price: `Large $25   Small $20`
         },
         {
-            menuEntry: "Dessert",
-            description: "Pizza Dessert"
+            menuEntry: "Hawaiian",
+            description: "Ham, cheese, and tomato with fresh pineapple",
+            price: `Large $25   Small $20`
         },
     ];
 
@@ -43,14 +47,18 @@ const menuTab = function(tabElement) {
         let menuDish = document.createElement("div");
         let menuDishTitle = document.createElement("h3");
         let menuDishText = document.createElement("div");
+        let menuDishPrice = document.createElement("div");
         menuDish.classList.add(`menu__dish`, `menu__dish--${dishes[i].menuEntry.toLowerCase()}`);
         menuDishTitle.classList.add(`menu__name`, `menu__name--${dishes[i].menuEntry.toLowerCase()}`);
         menuDishText.classList.add(`menu__description`, `menu__description--${dishes[i].menuEntry.toLowerCase()}`);
+        menuDishPrice.classList.add(`menu__price`, `menu__price--${dishes[i].menuEntry.toLowerCase()}`);
         menuDishText.textContent = dishes[i].description;
         menuDishTitle.textContent = dishes[i].menuEntry; 
+        menuDishPrice.textContent = dishes[i].price;
         menuContainer.appendChild(menuDish);
         menuDish.appendChild(menuDishTitle);
         menuDish.appendChild(menuDishText);
+        menuDish.appendChild(menuDishPrice);
        
     }
 
@@ -58,7 +66,7 @@ const menuTab = function(tabElement) {
 
     // Add text content to appropriate elements
 
-    menuTitle.textContent = "Browse our dishes";
+    menuTitle.textContent = "Menu";
 
     
     // Add class names to elements
