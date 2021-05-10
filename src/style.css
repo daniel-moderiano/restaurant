@@ -58,6 +58,8 @@ img {
 .main {
     grid-area: main;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 3px solid #5B4720;
 }
 
@@ -143,4 +145,26 @@ img {
 .contact__list-item {
     color: #e0e0e0;
     font-family: "Nunito Sans", sans-serif;
+}
+
+/* MENU TAB */
+
+.menu {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu__title {
+    color: white;
+}
+
+.menu__name {
+    color: white;
+}
+
+.menu__description {
+    color: white;
 }
