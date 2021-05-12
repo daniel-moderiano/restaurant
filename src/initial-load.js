@@ -9,8 +9,6 @@ const initialLoad = function() {
     const navBtnGroup = document.createElement("div");
     const navBtns = ["Home", "Menu", "Contact"];
     const main = document.createElement("div");
-    const footer = document.createElement("footer");
-    const footerCopyright = document.createElement("p");
 
     // Append first degree child nodes to grid container
     content.appendChild(grid);
@@ -31,11 +29,6 @@ const initialLoad = function() {
             navBtn.classList.toggle("nav__btn--selected");
         }
     }
-
-    footer.appendChild(footerCopyright);
-
-    // Add text content to appropriate elements
-    footerCopyright.textContent = "Copyright Pizza Fugazzi 2021";
     
     // Add class names to elements
     grid.classList.add("grid");
@@ -43,8 +36,7 @@ const initialLoad = function() {
     nav.classList.add("nav");
     navBtnGroup.classList.add("nav__btn-group");
     main.classList.add("main");
-    footer.classList.add("footer");
-    footerCopyright.classList.add("footer__copyright");
+
 
 
 };
