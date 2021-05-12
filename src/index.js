@@ -16,12 +16,26 @@ const page = function() {
     const content = document.querySelector("#content");
     const tabContent = document.querySelector(".main");
 
+    const btnArr = [homeBtn, menuBtn, contactBtn];
+
+    const toggleBtn = function(btn) {
+        btnArr.forEach((btn) => {
+            if (btn.classList.contains("nav__btn--selected")) {
+                btn.classList.toggle("nav__btn--selected");
+            } else {
+                // pass
+            }
+        });
+        btn.classList.toggle("nav__btn--selected");
+    }
+
     return {
         homeBtn,
         menuBtn,
         contactBtn,
         content,
-        tabContent
+        tabContent,
+        toggleBtn
     }
 }();
 
@@ -29,7 +43,7 @@ homeTab(page.tabContent);
 
 // Add functions that enable tab switching on click of each relevant tab
 
-const homeClick = function() {
+const homeClick = function(e) {
     if (page.tabContent.hasChildNodes()) {
         while (page.tabContent.firstChild) {
             page.tabContent.removeChild(page.tabContent.lastChild);
@@ -38,13 +52,14 @@ const homeClick = function() {
     } else {
         // pass
     }
+    page.toggleBtn(e.target);
 }
 
 page.homeBtn.addEventListener("click", homeClick);
 
 
 
-const menuClick = function() {
+const menuClick = function(e) {
     if (page.tabContent.hasChildNodes()) {
         while (page.tabContent.firstChild) {
             page.tabContent.removeChild(page.tabContent.lastChild);
@@ -53,13 +68,14 @@ const menuClick = function() {
     } else {
         // pass
     }
+    page.toggleBtn(e.target);
 }
 
 page.menuBtn.addEventListener("click", menuClick)
 
 
 
-const contactClick = function() {
+const contactClick = function(e) {
     if (page.tabContent.hasChildNodes()) {
         while (page.tabContent.firstChild) {
             page.tabContent.removeChild(page.tabContent.lastChild);
@@ -68,6 +84,7 @@ const contactClick = function() {
     } else {
         // pass
     }
+    page.toggleBtn(e.target);
 }
 
 page.contactBtn.addEventListener("click", contactClick)

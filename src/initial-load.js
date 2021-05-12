@@ -27,6 +27,9 @@ const initialLoad = function() {
         navBtn.textContent = navBtns[i];
         navBtn.id = navBtns[i].toLowerCase();
         navBtnGroup.appendChild(navBtn);
+        if (i == 0) {
+            navBtn.classList.toggle("nav__btn--selected");
+        }
     }
 
     footer.appendChild(footerCopyright);
@@ -42,6 +45,7 @@ const initialLoad = function() {
     main.classList.add("main");
     footer.classList.add("footer");
     footerCopyright.classList.add("footer__copyright");
+
 
 };
 
