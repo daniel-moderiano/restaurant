@@ -39,7 +39,7 @@ const page = function() {
     }
 }();
 
-homeTab(page.tabContent);
+contactTab(page.tabContent);
 
 // Add functions that enable tab switching on click of each relevant tab
 
