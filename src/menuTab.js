@@ -16,7 +16,7 @@ const menuTab = function(tabElement) {
     // Append second and third degree child nodes to relevant parent nodes
 
     tabElement.appendChild(menuContainer);
-    menuContainer.appendChild(menuTitle);
+    // menuContainer.appendChild(menuTitle);
 
     // Create four menu entries for dishes
 

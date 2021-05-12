@@ -54,7 +54,6 @@ img {
 
 .nav {
     grid-area: nav; 
-    border: 1px solid white;
 }
 
 .main {
@@ -62,7 +61,7 @@ img {
     align-items: center;
     display: flex;
     flex-direction: column;
-    border: 3px solid #5B4720;
+    /* border: 3px solid #5B4720; */
 }
 
 .main--home {
@@ -77,16 +76,20 @@ img {
     justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./pizza.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./pizza.jpg);
     width: 100%;
-    height: 80vh;
+    height: 600px;
+    margin-top: 1rem;
 }
 
 .introduction__title {
     font-size: 4rem;
     color: #e0e0e0;
     font-family: "Sansita Swashed", sans-serif;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 2rem 0;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    text-align: center;
 }
 
 .introduction__text {
@@ -106,13 +109,35 @@ img {
     grid-area: footer;
     height: 2em;
     color: #e0e0e0;
+    position: fixed;
+    bottom: 0;
+
 }
 
 .nav__btn {
-    /* border: 3px solid #5B4720; */
+    border: none;
+    outline: none;
     background-color: #0A0B09;
     color: #e0e0e0;
-    /* Consider making the selected state solid gold background with white text, and have this blend to the gold outline of the tab box. */
+    font-family: "Sansita Swashed", sans-serif;
+    font-size: 2rem;
+    padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+}
+
+.nav__btn:hover {
+    background-color: #5B4720;
+}
+
+.nav__btn:focus {
+    background-color: #5B4720;
+}
+
+.nav__btn-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
 }
 
 /* CONTACT TAB */
