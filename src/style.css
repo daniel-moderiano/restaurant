@@ -121,15 +121,13 @@ img {
     color: #e0e0e0;
     font-family: "Sansita Swashed", sans-serif;
     font-size: 2rem;
-    padding: 0.25rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.25rem 1.5rem 0.6rem 1.4rem;
+
 }
 
-.nav__btn:hover {
+.nav__btn:hover, .nav__btn--selected {
     background-color: #5B4720;
-}
-
-.nav__btn--selected {
-    background-color: #5B4720;
+    border-radius: 50px;
 }
 
 .nav__btn-group {
